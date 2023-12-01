@@ -1,0 +1,163 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+:root {
+--primary-color: rgb(30, 187, 148);
+}
+body{
+    background-color: var(--primary-color);
+}
+
+.btn {
+    background-color: rgb(179, 119, 214);/*background-color: var(--primary-color);*/
+/*     width: 100%; */
+}
+
+.btn:hover{
+    background-color: rgb(215, 147, 255);/*background-color: rgb(31, 168, 134);*/
+    transition: 0.5s;
+}
+
+.mask-container{
+    display: none;
+}
+
+.resultados {
+    visibility: hidden;
+}
+
+.imgs {
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: center;
+}
+
+hr {
+    border: 1px solid black; /* Configura a cor da borda para preto */
+    margin: 20px 0; /* Adiciona margem acima e abaixo da linha para espaço visual */
+}
+
+/*---------------------------------------------------------*/
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  #progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  #progress-bar-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 4px;
+  }
+
+  #progress-bar-text {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+  }
+
+  #chart-container {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  /* ======================== */
+.icons {
+	display: flex;
+	column-gap: 25px;
+    margin-left: 50px;
+    margin-bottom: 7px;
+}
+.icon {
+	display: inline-flex;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #000000;
+	border-radius: 50%;
+	outline: 2px solid #781d91;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+.icon--instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+.icon--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+}
+.icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--github:hover {
+	background-color: #d6d6d6;
+	outline-color: #000000;
+}
+.icon--code:hover {
+	background-color: RGB(179, 119, 214);
+	outline-color: #000000;
+}
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+}
+
+/*---------------------*/
+.footer__copy {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+  }
+
+/*------------------------------*/
+.iconss {
+    position: fixed;
+    bottom: 0;
+    left: 92%;
+    transform: translateX(-50%);
+    /*background-color: #fff; /* Adicione uma cor de fundo se desejar */
+    padding: 10px; /* Adicione preenchimento conforme necessário */
+    z-index: 1; /* Defina um valor de z-index adequado */
+  }
+  
+  .iconn {
+    margin: 0 10px; /* Adicione margens laterais para espaçar os ícones, se necessário */
+  }
